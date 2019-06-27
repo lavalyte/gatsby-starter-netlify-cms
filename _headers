@@ -1,4 +1,7 @@
 
-/*
-  X-Frame-Options:ALLOW
+[[headers]]
+  for = "/"
+  [headers.values]
+  X-Frame-Options = "ALLOW-FROM http://localhost:8080/"
+  John = "true"
 
