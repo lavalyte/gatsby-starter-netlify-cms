@@ -2,6 +2,7 @@
 [[headers]]
   for = "/"
   [headers.values]
-  X-Frame-Options = "ALLOW-FROM http://localhost/"
+  X-Frame-Options = "ALLOW-FROM http://*/"
   John = "true"
+  Content-Security-Policy = http://*/
 
