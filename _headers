@@ -1,8 +1,4 @@
-[[headers]]
-for = "/static/*"
-[headers.values]
-Cache-Control = "public, max-age=360000"
 
-for = "/*"
-[headers.values]
-X-Frame-Options: allow-from http://localhost:8080/UtilibillProject
+/*
+  X-Frame-Options: allow-from http://localhost:8080/UtilibillProject/
+
