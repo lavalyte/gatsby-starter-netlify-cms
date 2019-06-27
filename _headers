@@ -2,6 +2,6 @@
 [[headers]]
   for = "/"
   [headers.values]
-  X-Frame-Options = "ALLOW-FROM http://localhost:8080/"
+  X-Frame-Options = "ALLOW-FROM http://localhost/"
   John = "true"
 
