@@ -1,8 +1,5 @@
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-  X-Frame-Options = "ALLOW-FROM http://*/"
-  John = "true"
-  Content-Security-Policy = http://*/
-
+/
+  X-Frame-Options: ALLOW-FROM http://*/
+  TestHeader: john
+  Content-Security-Policy: http://*/
