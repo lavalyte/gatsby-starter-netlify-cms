@@ -5,3 +5,10 @@
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
+  
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "ALLOW-ACCESS http://http://localhost:8080"
+    Content-Security-Policy = "frame-src http://http://localhost:8080"
