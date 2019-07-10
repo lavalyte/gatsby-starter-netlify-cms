@@ -1,7 +1,7 @@
 ---
 templateKey: newsletter-page
 title: Newsletter
-topimage: /img/chemex.jpg
+topimage: /img/flavor_wheel.jpg
 ---
 ### Shade-grown coffee
 
