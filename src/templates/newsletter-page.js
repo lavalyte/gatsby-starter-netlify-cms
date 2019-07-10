@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import Img from 'gatsby-image'
 
 export const NewsletterPageTemplate = ({ title, topimage, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -14,7 +13,7 @@ export const NewsletterPageTemplate = ({ title, topimage, content, contentCompon
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <img src={topimage} alt="dummy"  />
+              <img src={topimage.childImageSharp.fluid.src} alt="dummy"  />
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
@@ -61,7 +60,13 @@ export const newsletterPageQuery = graphql`
       html
       frontmatter {
         title
-        topimage
+        topimage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
